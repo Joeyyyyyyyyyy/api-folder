@@ -25,7 +25,12 @@ mongoose.connection.on("disconnected", () => {
 });
 
 let corsOptions = {
-  origin: ["http://localhost:3001", "http://localhost:3000"],
+  origin: [
+    "http://localhost:3001",
+    "http://localhost:3000",
+    "https://client-folder-3hi2.vercel.app",
+    "https://admin-folder-34oj-a14poqila-joeychong0213-gmailcom.vercel.app"
+  ],
   optionsSuccessStatus: 200, // For legacy browser support
   credentials: true,
 };
